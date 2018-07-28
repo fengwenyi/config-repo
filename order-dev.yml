@@ -15,10 +15,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 server:
   port: 8081
-
+env: dev
 # 自定义规则
 PRODUCT:
   ribbon:
     NFLoadBalancerClassName: com.netflix.loadbalancer.RandomRule
-	
-env: dev
